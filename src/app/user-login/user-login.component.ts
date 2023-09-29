@@ -1,6 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { User } from '../user';
 import { LoginUserService } from '../login-user.service';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-user-login',
@@ -10,14 +11,16 @@ import { LoginUserService } from '../login-user.service';
 export class UserLoginComponent {
   user : User = new User();
 
-  constructor(private loginUserService: LoginUserService){
-
-  }
+  constructor(
+    private loginUserService: LoginUserService,
+    private router: Router
+    ){ }
 
   userLogin(){
     console.log(this.user)
-    this.loginUserService.loginUser(this.user).subscribe(data=>{
-      alert("Inicio de sesión exitoso")
+    this.loginUserService.loginUser(this.user).subscribe((data)=>{
+      //alert("Inicio de sesión exitoso");
+      this.router.navigate(['/home']);
     }, error=>alert("Lo sentimos, por favor ingrese el correo y/o contraseña correctos"));
   }
 
