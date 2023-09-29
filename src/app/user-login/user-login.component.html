@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div> 
+    
+    <form (ngSubmit)="userLogin()">
+        <h3>Inicia Sesión</h3>
+        <label for="correo">Correo electrónico</label>
+        <input type="text" [(ngModel)]="user.email" placeholder="Ingrese su email" id="email" name="email">
+
+        <label for="contraseña">Contraseña</label>
+        <input type="password" [(ngModel)]="user.password"  placeholder="Ingrese su contraseña" id="password" name="password">
+
+        <button type="submit" class="login_btn">INGRESAR</button>
+    </form>
+</body>
+</html>
