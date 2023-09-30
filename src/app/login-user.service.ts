@@ -12,8 +12,8 @@ export class LoginUserService {
   private baseUrl='http://localhost:9091/user/login';
   constructor(private httpClient:HttpClient) { }
 
+  
   loginUser(user: User):Observable<object>{
-    // console.log(user)
     return this.httpClient.post(`${this.baseUrl}`, user)
   }
 }

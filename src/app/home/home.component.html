@@ -1,1 +1,24 @@
-<p>home works!</p>
+<div class="container">
+	<table>
+		<thead class>
+			<tr>
+                <th>UBICACION</th>
+                <th>NOMBRE LOCAL</th>
+                <th>REPRESENTANTE</th>
+                <th>ESTADO</th>
+                <th>TIPO DE COMERCIO</th>
+                <th>SUBCATEGORIA</th>
+                <th>OPCIONES</th>
+            </tr>
+		</thead>
+        <tr *ngFor="let dato of datos">
+            <td>{{dato.location}}</td>
+            <td>{{dato.local_name}}</td>
+            <td>{{dato.tenant_name}}</td>
+            <td>{{dato.state}}</td>
+            <td>{{dato.commerce_type}}</td>
+            <td>{{dato.subcategorie}}</td>
+            <td></td>
+        </tr>
+	</table>
+</div>
