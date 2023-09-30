@@ -1,8 +1,97 @@
+
+h1{
+	color: white;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align: center;
+}
 .container {
 	margin:auto;
 	margin-top: 2cm;
 	width: fit-content;
+}
 
+button{
+	padding: 15px 100px;
+	background-color: #13062b;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	letter-spacing: 4px;
+	overflow: hidden;
+	transition: 0.5s;
+	cursor: pointer;
+}
+  
+button:hover{
+	  background: #163396;
+	  color: white;
+	  box-shadow: 0 0 5px #773de2,
+				  0 0 25px #773de2,
+				  0 0 50px #773de2,
+				  0 0 200px #773de2;
+}
+
+.editBtn{
+	padding: 10px 30px;
+	background-color: #308d19;
+	color: white;
+	font-weight: bold;
+	margin: 5px;
+	letter-spacing: 4px;
+	overflow: hidden;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.editBtn:hover{
+	background: #10a702;
+	color: white;
+	box-shadow: 0 0 5px #51af04,
+				0 0 25px #51af04,
+				0 0 50px #51af04,
+				0 0 200px #51af04;
+}
+
+.delBtn{
+	padding: 10px 30px;
+	background-color: #801010;
+	color: white;
+	font-weight: bold;
+	margin: 5px;
+	letter-spacing: 4px;
+	overflow: hidden;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.delBtn:hover{
+	background: #ff1010;
+	color: white;
+	box-shadow: 0 0 5px #942f00,
+				0 0 25px #942f00,
+				0 0 50px #942f00,
+				0 0 200px #942f00;
+}
+
+.regBtn{
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	width: 300px;
+	height: inherit;
+	padding: 5px;
+	margin: 5px;
+	letter-spacing: 4px;
+	overflow: hidden;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.regBtn:hover{
+	background: #250246;
+	color: white;
+	box-shadow: 0 0 5px #2e0546,
+				0 0 25px #2e0546,
+				0 0 50px #2e0546,
+				0 0 100px #2e0546;
 }
 
 table {
@@ -11,7 +100,6 @@ table {
 	text-align: left;
 	border-collapse: collapse;
 }
-
 
 th, td {
 	padding: 15px;
@@ -30,19 +118,28 @@ tr:nth-child(even){
 tr:hover td{
 	background-color: rgb(121, 26, 230) ;
 	color: white;
-}
-/* 
-.table-header {
-	background:#331d38;
-	border-bottom: solid 5px #221125;
-    color: white;
+
 }
 
-.table-data{
-	flex: 1 1 20%;
-	padding:0;
+
+.createTable{
+	width:100%;
+	background-color: white;
+	text-align: center;
 }
 
-.header__item {
-	text-transform:uppercase;
-} */
+.input-box{
+	padding: 3px;
+}
+
+input{
+width: 80%;
+height: 0.8cm;
+color: #0d041b;
+font-size: 0.5cm;
+text-align: center;
+}
+
+input.placeholder{
+	color: #0d041b;
+}

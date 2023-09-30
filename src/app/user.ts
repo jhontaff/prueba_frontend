@@ -1,4 +1,10 @@
 export class User {
-    userEmail!:string;
-    password!:string;
+    id !:number;
+    full_name!:string;
+    identification!:string;
+    phone!:number;
+    role!:string;
+    username!:string;
+    password!:string;  
+	
 }
